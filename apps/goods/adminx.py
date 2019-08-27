@@ -40,6 +40,10 @@ class GoodsCategoryAdmin(object):
     list_per_page = per_page_num
 
 
+class GoodsImageAdmin(object):
+    list_display = ["id", "goods", "image", "add_time"]
+
+
 class GoodsBrandAdmin(object):
     list_display = ["category", "image", "name", "desc"]
 
@@ -64,8 +68,8 @@ class IndexAdAdmin(object):
 
 xadmin.site.register(Goods, GoodsAdmin)
 xadmin.site.register(GoodsCategory, GoodsCategoryAdmin)
+xadmin.site.register(GoodsImage,GoodsImageAdmin)
 xadmin.site.register(Banner, BannerGoodsAdmin)
 xadmin.site.register(GoodsCategoryBrand, GoodsBrandAdmin)
-
 xadmin.site.register(HotSearchWords, HotSearchAdmin)
 xadmin.site.register(IndexAd, IndexAdAdmin)

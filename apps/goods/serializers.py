@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from goods.models import Goods, GoodsCategory
+from goods.models import Goods, GoodsCategory, GoodsImage
 
 '''
 drf的Modelserializer实现商品列表页
@@ -10,6 +10,7 @@ class CategorySerilizer3(serializers.ModelSerializer):
     '''
     三级级分类
     '''
+
     class Meta:
         model = GoodsCategory
         fields = "__all__"
@@ -44,3 +45,11 @@ class GoodsSerializer(serializers.ModelSerializer):
     class Meta:
         model = Goods
         fields = '__all__'
+
+
+class GoodsImageSerializer(serializers.ModelSerializer):
+    image = GoodsSerializer()
+
+    class Meta:
+        model = GoodsImage
+        fields = "__all__"
