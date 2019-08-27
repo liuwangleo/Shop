@@ -1,0 +1,53 @@
+[33mcommit e0b3d7101609343ced6fdd5a51b4322e5d44a55e[m[33m ([m[1;36mHEAD -> [m[1;32m20190827_user_login_register[m[33m)[m
+Author: liuwang <3075312534@qq.com>
+Date:   Tue Aug 27 14:58:44 2019 +0800
+
+    用户登录和商品收藏模块
+
+[33mcommit a91b7824d99ed86b4ad6e5bb31e0bb0fe7b994cf[m[33m ([m[1;31morigin/master[m[33m, [m[1;31morigin/20190826_shop_goods_list[m[33m, [m[1;32mmaster[m[33m, [m[1;32m20190826_shop_goods_list[m[33m)[m
+Author: liuwang <3075312534@qq.com>
+Date:   Tue Aug 27 08:53:33 2019 +0800
+
+    商品列表页展示和drf源码分析
+
+[33mcommit 101f5ef579f572c9113098ac565eff427ca35af0[m
+Author: JamesLW-LEO <42724544+JamesLW-LEO@users.noreply.github.com>
+Date:   Mon Aug 26 19:42:30 2019 +0800
+
+    Update README.md
+
+[33mcommit dd04aad2085017b195d3ed380567857a4afa98fd[m
+Author: liuwang <3075312534@qq.com>
+Date:   Mon Aug 26 19:37:39 2019 +0800
+
+    商品列表页展示和drf源码分析
+
+[33mcommit ad76dd66f3da132e96fd9d5f8b8095d079418d64[m
+Author: liuwang <3075312534@qq.com>
+Date:   Mon Aug 26 16:04:04 2019 +0800
+
+    model设计和添加
+
+[33mcommit ea8e87c2c7e4b6885424122a5c3ff9eb68cb1f19[m
+Author: liuwang <3075312534@qq.com>
+Date:   Mon Aug 26 16:00:51 2019 +0800
+
+    first commit
+
+[33mcommit 5d1db421531230498b455ee06188e16c7f3ee474[m
+Author: liuwang <3075312534@qq.com>
+Date:   Mon Aug 26 14:15:13 2019 +0800
+
+    first commit
+
+[33mcommit f41765e6f555bc87f0f7093c95c007a72da026d7[m
+Author: liuwang <3075312534@qq.com>
+Date:   Mon Aug 26 14:10:24 2019 +0800
+
+    first commit
+
+[33mcommit f6203689d7adb9e575a3a44879010a88ef7b61da[m
+Author: liuwang <3075312534@qq.com>
+Date:   Mon Aug 26 14:06:32 2019 +0800
+
+    first commit
