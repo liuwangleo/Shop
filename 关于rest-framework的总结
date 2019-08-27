@@ -1,0 +1,18 @@
+viewset
+    GenericViewSet  ----> drf
+        GenericAPIView  ----> drf
+            APIView         ----> drf
+                View            ----> django
+
+mixins
+    CreateModelMixin
+　　ListModelMixin
+　　UpdateModelMixin
+　　RetrieveModelMixin
+　　DestoryModelMixin
+
+我们一般都是用viewsets
+    ViewSet类与View类其实几乎是相同的,但提供的是read或update这些操作,而不是get或put 等HTTP动作。
+    同时，ViewSet为我们提供了默认的URL结构, 使得我们能更专注于API本身。
+    Router提供了一种简单，快速，集成的方式来定义一系列的urls
+
