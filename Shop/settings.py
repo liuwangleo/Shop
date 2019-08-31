@@ -142,6 +142,7 @@ AUTH_USER_MODEL = 'users.UserProfile'
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
+# 跨域
 CORS_ORIGIN_ALLOW_ALL = True
 
 # rest-framework
@@ -157,6 +158,7 @@ REST_FRAMEWORK = {
     # 'DEFAULT_PAGINATION_CLASS': 'common.utils.CustomPagination',
     # 'PAGE_SIZE': env.int("DRF_PAGE_SIZE", 20),
     'DATETIME_FORMAT': "%Y-%m-%d %H:%M:%S",
+    # 权限认证
     'DEFAULT_AUTHENTICATION_CLASSES': (
         'rest_framework.authentication.BasicAuthentication',
         'rest_framework.authentication.SessionAuthentication',

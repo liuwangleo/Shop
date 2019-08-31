@@ -88,6 +88,7 @@ class UserRegSerializer(serializers.ModelSerializer):
         return attrs
 
         # 密码加密保存
+
     def create(self, validated_data):
         user = super(UserRegSerializer, self).create(validated_data=validated_data)
         user.set_password(validated_data["password"])
@@ -97,3 +98,13 @@ class UserRegSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
         fields = ('username', 'code', 'mobile', 'password')
+
+
+class UserDetailSerializer(serializers.ModelSerializer):
+    """
+    用户详情
+    """
+
+    class Meta:
+        model = User
+        fields = ("name", "gender", "birthday", "email", "mobile")

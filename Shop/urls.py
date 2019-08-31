@@ -25,7 +25,8 @@ from django.views.static import serve
 
 from Shop.settings import MEDIA_ROOT
 from goods.views import GoodsListViewSet, CategoryViewSet
-from user_operation.views import UserFavViewset
+from trade.views import ShoppingCartViewset, OrderViewset
+from user_operation.views import UserFavViewset, LeavingMessageViewset, AddressViewset
 
 from users.views import SmsCodeViewset, UserViewset
 
@@ -36,13 +37,17 @@ router.register(r'categorys', CategoryViewSet, base_name='categorys')
 router.register(r'code', SmsCodeViewset, base_name='code')
 router.register(r'users', UserViewset, base_name='users')
 router.register(r'userfav', UserFavViewset, base_name='userfav')
+router.register(r'messages', LeavingMessageViewset, base_name='messages')
+router.register(r'address', AddressViewset, base_name='address')
+router.register(r'shopcarts', ShoppingCartViewset, base_name='shopcarts')
+router.register(r'orders', OrderViewset, base_name='orders')
 
 urlpatterns = [
     path('xadmin/', xadmin.site.urls),
     path('ueditor/', include('DjangoUeditor.urls')),
     path('media/<path:path>', serve, {'document_root': MEDIA_ROOT}),
-    # path('docs/', include_docs_urls(title='文档')),
-    path('docs/', schema_view),
+    path('docs/', include_docs_urls(title='API文档')),
+    # path('docs/', schema_view),
     path('api-auth/', include('rest_framework.urls')),
     # drf的token
     path('api-token-auth/', views.obtain_auth_token),
