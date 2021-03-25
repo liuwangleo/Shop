@@ -41,7 +41,7 @@ prompt-toolkit==2.0.9
 Pygments==2.4.2
 PyJWT==1.7.1
 pytz==2019.2
-PyYAML==5.1.2
+PyYAML==5.4
 requests==2.22.0
 serializers==0.2.4
 simplejson==3.16.0
